@@ -1,0 +1,388 @@
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+  .first-section {
+    align-items: center;
+    background-image: url('./../assets/images/section1-bg.jpg'); /* Replace with your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0; /* Increased padding for better separation from the navbar */
+    margin: 0;
+    position: relative;
+    z-index: 1; /* Ensures the section is below the navbar */
+    padding-top: 100px; 
+}
+
+.content {
+    max-width: 600px;
+}
+
+.first-section h2 {
+    font-size: 36px;
+    color: white;
+    margin-left: 200px;
+}
+
+.global {
+    color: orangered; /* Change text color */
+    font-weight: bold; /* Make text bold */
+    padding: 2px 4px; /* Add some padding */
+    border-radius: 3px; /* Optional: Add rounded corners */
+}
+
+.first-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    margin-left: 200px;
+    margin-top: -30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: orangered;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #FF3D2E;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    padding: 12px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+    background-color: #FFC107;
+    transform: translateY(-2px);
+}
+
+.second-section {  
+  background: linear-gradient(to bottom, #e0e0e0, #ffffff); /* Dégradé similaire au thème de fond de chat WhatsApp */  
+  padding: 40px 80px;  
+  text-align: center;  
+  color: black;  
+}  
+
+.inner-section {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  gap: 20px;  
+}  
+
+.left-column {  
+  max-width: 400px;  
+  text-align: left;  
+}  
+
+.left-column h2 {  
+  font-size: 1.8em;  
+  font-family: 'Poppins', sans-serif;  
+  text-transform: uppercase;  
+  margin: 0;  
+}  
+
+.highlight {  
+  color: #FFA500; /* Orange clair */  
+}  
+
+.left-column p {  
+  color: #333333; /* Noir clair */  
+  font-family: 'Poppins', sans-serif;  
+  text-align: justify;  
+  margin: 20px 0;  
+}  
+
+.left-column button {  
+  background-color: white;  
+  color: black;  
+  border: 2px solid #FFA500; /* Orange clair */  
+  border-radius: 5px;  
+  padding: 10px 20px;  
+  font-size: 1em;  
+  text-transform: uppercase;  
+  cursor: pointer;  
+  transition: background-color 0.3s, color 0.3s;  
+}  
+
+.left-column button:hover {  
+  background-color: yellow;  
+  color: white;  
+}  
+
+.right-column {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 20px;  
+}  
+
+.icon-box-container {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 20px;  
+}  
+
+.icon-box {  
+  background: linear-gradient(Orange); /* Orange to Purple gradient */  
+  border-radius: 10px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  padding: 15px;  
+  text-align: center;  
+  transition: transform 0.3s;  
+  width: 100%; /* Make the boxes smaller */  
+}  
+
+.icon-box:hover {  
+  transform: translateY(-10px);  
+}  
+
+.icon {  
+  background: #e0f7fa;  
+  border-radius: 50%;  
+  padding: 10px;  
+  margin-bottom: 10px;  
+  font-size: 24px;  
+}  
+
+.title {  
+  font-size: 1.2em;  
+  color: #333333; /* Noir clair */  
+  font-family: 'Poppins', sans-serif;  
+  margin: 10px 0;  
+}  
+
+.description {  
+  color: #666;  
+  font-family: 'Open Sans', sans-serif;  
+}  
+
+.line {  
+  height: 1px;  
+  background-color: #D3D3D3; /* Gris clair */  
+  margin: 10px 0;  
+} 
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-section {
+  background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+  padding: 30px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.section-description {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-icon-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.service-icon-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 22%;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.service-icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  background: #e0f7fa;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.service-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    to{
+      opacity: 1;
+    }
+  }
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fourth-section {
+  background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.inner-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.left-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fraud-service-box {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  height: 200px;
+}
+
+.fraud-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.fraud-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.right-column {
+  max-width: 400px;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.section-description {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.offers-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333;
+}
+
+.cta-button {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #FF8C00;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
